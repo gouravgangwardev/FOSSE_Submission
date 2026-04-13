@@ -301,6 +301,97 @@ Per-route document titles update dynamically:
 | `CORS_ALLOWED_ORIGINS` | `http://localhost:5173` | | Comma-separated origins for the React dev server |
 
 ---
+## Before Improvements
+
+### 1. Login
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/523d9f27-e9b3-44a5-8e40-052c4f3b0ec5" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/8fd517ae-e089-4a55-a603-3911eae6762e" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 2. Registration
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/afe9a9fc-3a1e-4b44-9247-915f89d06a4d" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/4badb3f9-7fbc-4465-8a7c-d198fda821a8" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 3. Workshop Types
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/373e8f59-ad94-40b0-99b5-65b0afd8c106" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/f041db49-a807-474d-8aba-58d726b059c0" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 4. Workshop Status
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/88b04f27-940c-41b0-9c06-0eb8c3c7506c" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/4e543e9a-2943-4b24-932f-e07bb3450f49" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 5. Propose Workshop
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/18ba2f2b-af6d-40ed-8955-bddecf5a1398" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/86727af9-7f2c-4d7d-bf19-1e541a85af60" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 6. Empty State
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/317b6d2c-893b-4485-b849-d4c11760fab6" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/9263f178-246c-4494-876b-29ecd7d8c607" width="300"/></td>
+</tr>
+</table>
+
+---
 
 ## Submission Checklist
 
