@@ -300,8 +300,7 @@ Per-route document titles update dynamically:
 | `ALLOWED_HOSTS` | `localhost` | | Comma-separated — e.g. `localhost,127.0.0.1` |
 | `CORS_ALLOWED_ORIGINS` | `http://localhost:5173` | | Comma-separated origins for the React dev server |
 
----
-## Before Improvements
+---## Before Improvements
 
 ### 1. Login
 
@@ -393,6 +392,97 @@ Per-route document titles update dynamically:
 
 ---
 
+## After Improvements
+
+### 1. Login
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/deda0c54-9e17-44db-81e7-53ad947419b5" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/5ad9a802-c899-4771-9fe5-541a4736e03a" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 2. Registration
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/31f19d7d-b9bd-4b18-a16d-62a627e551eb" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/7fd27444-b4e6-41d1-b2bc-10318bbb25cb" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 3. Workshop Types
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/7c7801c8-09ad-4879-9974-a3cb29b07d69" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/411ac74b-8c64-45e9-ba45-b5dca4bd6602" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 4. Workshop Status
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/356b5153-290f-4932-94d6-abdef045a3f8" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/9ec24a0f-62d0-4b09-862e-a7ecaf5f7a70" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 5. Propose Workshop
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/3bed20e4-377e-496f-b664-88b0a7bf3318" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/5f9c034a-fb2f-4ff9-8838-fd0139e436f9" width="300"/></td>
+</tr>
+</table>
+
+---
+
+### 6. Empty State
+
+<table>
+<tr>
+<td><b>Desktop</b></td>
+<td><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/14518d39-b977-4744-a2ba-d2837ddf3130" width="100%"/></td>
+<td><img src="https://github.com/user-attachments/assets/bbe55afb-4708-4f2d-9b1c-b396fd33f96f" width="300"/></td>
+</tr>
+</table>
+
+---
 ## Submission Checklist
 
 - [x] Code is readable and well-structured
