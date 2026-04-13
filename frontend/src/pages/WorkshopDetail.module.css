@@ -1,0 +1,105 @@
+.page { padding: var(--space-6) 0 var(--space-16); }
+.centered { display: flex; align-items: center; justify-content: center; min-height: 50vh; }
+
+.breadcrumb {
+  font-size: .8125rem; color: var(--gray-400); margin-bottom: var(--space-6);
+}
+.breadcrumb a { color: var(--indigo-600); }
+.breadcrumb a:hover { text-decoration: underline; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .layout { grid-template-columns: 1fr 340px; }
+}
+
+/* Main */
+.main { display: flex; flex-direction: column; gap: var(--space-8); }
+
+.header { display: flex; flex-direction: column; gap: var(--space-3); }
+.categoryRow { display: flex; align-items: center; gap: var(--space-2); font-size: .8125rem; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: .05em; }
+.categoryName {}
+.title { font-family: var(--font-display); font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 800; color: var(--gray-900); line-height: 1.2; letter-spacing: -.02em; }
+.badgeRow { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+
+.section { display: flex; flex-direction: column; gap: var(--space-4); }
+.sectionTitle { font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--gray-800); border-bottom: 2px solid var(--gray-100); padding-bottom: var(--space-3); }
+
+.description { font-size: 1rem; color: var(--gray-600); line-height: 1.75; white-space: pre-line; }
+
+.tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.tag {
+  display: inline-block; padding: var(--space-2) var(--space-3);
+  background: var(--indigo-50); color: var(--indigo-700);
+  font-size: .8125rem; font-weight: 600;
+  border-radius: var(--radius-full); border: 1px solid var(--indigo-100);
+}
+
+.instructorCard { display: flex; align-items: flex-start; gap: var(--space-4); }
+.instructorAvatar {
+  flex-shrink: 0; width: 52px; height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--indigo-500), #7c3aed);
+  color: #fff; font-size: 1.1rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+}
+.instructorName { font-weight: 700; font-size: 1rem; color: var(--gray-800); margin-bottom: var(--space-1); }
+.instructorBio { font-size: .875rem; color: var(--gray-500); line-height: 1.6; }
+
+/* Sidebar */
+.sidebarCard {
+  background: var(--gray-0);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex; flex-direction: column; gap: var(--space-4);
+  position: sticky; top: 80px;
+  box-shadow: var(--shadow-md);
+}
+
+.price { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--gray-900); }
+
+.details { display: flex; flex-direction: column; gap: var(--space-3); }
+.detailRow { display: flex; flex-direction: column; gap: 2px; }
+.detailRow dt { font-size: .8125rem; font-weight: 600; color: var(--gray-500); }
+.detailRow dd { font-size: .9375rem; color: var(--gray-800); }
+
+.seatsBar { height: 6px; background: var(--gray-100); border-radius: var(--radius-full); overflow: hidden; }
+.seatsProgress {
+  height: 100%; border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--indigo-500), #7c3aed);
+  transition: width .6s var(--ease);
+}
+
+.bookBtn {
+  display: block; width: 100%;
+  text-align: center; padding: var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: 1rem; font-weight: 700;
+  transition: all var(--duration) var(--ease);
+}
+.bookBtnPrimary { background: var(--indigo-600); color: #fff; }
+.bookBtnPrimary:hover { background: var(--indigo-700); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(79,70,229,.35); }
+.bookBtnSecondary { background: var(--gray-100); color: var(--gray-700); border: 1px solid var(--gray-200); }
+.bookBtnSecondary:hover { background: var(--gray-200); }
+
+.closedNotice {
+  text-align: center; font-size: .875rem;
+  color: var(--gray-500); background: var(--gray-50);
+  border: 1px solid var(--gray-200); border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+.lastUpdated { font-size: .75rem; color: var(--gray-400); text-align: center; }
+.backLink { color: var(--indigo-600); font-weight: 600; }
+
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebarCard { position: static; overflow: hidden; word-break: break-word; }
+}

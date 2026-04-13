@@ -1,0 +1,81 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.searchWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchIcon {
+  position: absolute;
+  left: var(--space-4);
+  font-size: .9rem;
+  pointer-events: none;
+  z-index: 1;
+}
+.search {
+  width: 100%;
+  padding: var(--space-3) var(--space-4) var(--space-3) 2.75rem;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  font-size: .9375rem;
+  background: var(--gray-0);
+  color: var(--gray-800);
+  transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+}
+.search:focus {
+  outline: none;
+  border-color: var(--indigo-500);
+  box-shadow: 0 0 0 3px rgba(99,102,241,.15);
+}
+.search::placeholder { color: var(--gray-400); }
+
+.selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.selectLabel { display: block; }
+.select {
+  padding: var(--space-2) var(--space-3);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: .875rem;
+  color: var(--gray-700);
+  background: var(--gray-0);
+  cursor: pointer;
+  appearance: auto;
+  transition: border-color var(--duration) var(--ease);
+}
+.select:focus {
+  outline: none;
+  border-color: var(--indigo-500);
+  box-shadow: 0 0 0 3px rgba(99,102,241,.15);
+}
+
+.clearBtn {
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  background: var(--gray-50);
+  transition: all var(--duration) var(--ease);
+}
+.clearBtn:hover { background: var(--red-100); color: var(--red-700); border-color: var(--red-100); }
+
+.count { font-size: .8125rem; color: var(--gray-400); font-weight: 500; }
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  .selects { flex-direction: column; align-items: stretch; }
+  .selectLabel { width: 100%; }
+  .select { width: 100%; }
+  .clearBtn { width: 100%; }
+}

@@ -1,0 +1,67 @@
+.page { padding-bottom: var(--space-16); }
+
+.hero {
+  background: linear-gradient(135deg, var(--indigo-600) 0%, #7c3aed 100%);
+  padding: var(--space-12) 0 var(--space-16);
+  overflow: hidden;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+.heroEyebrow {
+  font-size: .8125rem; font-weight: 700;
+  color: rgba(255,255,255,.7);
+  letter-spacing: .1em; text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800; color: #fff;
+  line-height: 1.15; letter-spacing: -.03em;
+  margin-bottom: var(--space-4);
+}
+.heroAccent {
+  background: linear-gradient(90deg, #a5f3fc 0%, #818cf8 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.heroSub { font-size: 1.0625rem; color: rgba(255,255,255,.8); max-width: 52ch; line-height: 1.65; }
+
+.content {
+  display: flex; flex-direction: column; gap: var(--space-6);
+  margin-top: calc(-1 * var(--space-8)); position: relative; z-index: 1;
+}
+
+.grid { display: grid; gap: var(--space-5); grid-template-columns: 1fr; }
+@media (min-width: 640px)  { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+
+.loadingGrid { display: grid; gap: var(--space-5); grid-template-columns: 1fr; }
+@media (min-width: 640px)  { .loadingGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .loadingGrid { grid-template-columns: repeat(3, 1fr); } }
+
+.skeleton {
+  background: var(--gray-0); border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg); padding: var(--space-5);
+  display: flex; flex-direction: column; gap: var(--space-3); min-height: 220px;
+}
+.skLine {
+  background: var(--gray-100); border-radius: var(--radius-sm);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+.actionBtn {
+  padding: var(--space-3) var(--space-6);
+  background: var(--indigo-600); color: #fff;
+  font-size: .9375rem; font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: background var(--duration) var(--ease);
+}
+.actionBtn:hover { background: var(--indigo-700); }

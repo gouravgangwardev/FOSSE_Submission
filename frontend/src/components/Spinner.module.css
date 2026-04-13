@@ -1,0 +1,8 @@
+.wrap { display: inline-flex; align-items: center; justify-content: center; }
+.ring {
+  border: 3px solid var(--gray-200);
+  border-top-color: var(--indigo-500);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
