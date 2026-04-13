@@ -481,20 +481,3 @@ Per-route document titles update dynamically:
 <td><img src="https://github.com/user-attachments/assets/bbe55afb-4708-4f2d-9b1c-b396fd33f96f" width="300"/></td>
 </tr>
 </table>
-
----
-## Submission Checklist
-
-- [x] Code is readable and well-structured
-- [x] Git history shows progressive work
-- [x] README includes all 4 reasoning answers
-- [x] README includes setup instructions
-- [x] Before/after screenshots included (`/screenshots/`)
-- [x] Code is documented where necessary
-- [x] React used properly — not superficially
-- [x] Mobile-first responsive design
-- [x] Accessibility implemented throughout
-- [x] Performance optimised (debounce, lazy loading, local fonts)
-- [x] SEO meta tags present
-- [x] No hardcoded secrets
-- [x] `.env.example` provided
